@@ -20,19 +20,19 @@ def run_rectagle():
     
     print("rectagle")
 
-    #아랫쪽 무빙~
+    #오른쪽 무빙~
     for x in range(400,780+1,10):
         render_all(x,90)
-        
+    #위쪽 무빙
     for y in range(90,550+1,10):
         render_all(780,y)
-
+    #왼쪽 무빙~
     for x in range(750,20-1,-10):
         render_all(x,550)
-        
+    #아랫 무빙
     for y in range(550,90-1,-10):
         render_all(20,y)
-
+    #원 운동 시작점까지 이동
     for x in range(20,400+1,10):
         render_all(x,90)
     pass
@@ -48,7 +48,7 @@ while (True):
     
     run_rectagle()
     run_circle()
-    #break;
+    break;
     
 
 close_canvas()
