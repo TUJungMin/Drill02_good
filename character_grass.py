@@ -21,19 +21,19 @@ def run_rectagle():
     print("rectagle")
 
     #아랫쪽 무빙~
-    for x in range(50,750+1,10):
+    for x in range(400,780+1,10):
         render_all(x,90)
         
     for y in range(90,550+1,10):
-        render_all(750,y)
+        render_all(780,y)
 
-    for x in range(750,50-1,-10):
+    for x in range(750,20-1,-10):
         render_all(x,550)
         
     for y in range(550,90-1,-10):
-        render_all(50,y)
+        render_all(20,y)
 
-    for x in range(50,400+1,10):
+    for x in range(20,400+1,10):
         render_all(x,90)
     pass
 
