@@ -25,19 +25,21 @@ def run_rectagle():
         render_all(x,90)
         
     for y in range(90,550+1,10):
-        render_all(750,90)
+        render_all(750,y)
 
     for x in range(750,50-1,-10):
         render_all(x,550)
         
     for y in range(550,90-1,-10):
         render_all(50,y)
-        
+
+    for x in range(50,400+1,10):
+        render_all(x,90)
     pass
 
 def run_circle():
     cx,cy,r=400,300,200
-    for deg in range(0,360,5):
+    for deg in range(-90,270,5):
         x=cx+r*math.cos(deg/360*2*math.pi)
         y=cy+r*math.sin(deg/360*2*math.pi)
         render_all(x,y)
@@ -46,7 +48,7 @@ while (True):
     
     run_rectagle()
     run_circle()
-    break;
+    #break;
     
 
 close_canvas()
